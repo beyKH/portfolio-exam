@@ -40,7 +40,6 @@
   <main class="site-content">
     <div class="container">
       <div class="contact-hero">
-
         <div class="contact-hero__content">
           <h1 class="contact-hero__heading">Get in Touch</h1>
           <div class="hero__inner">
@@ -63,7 +62,7 @@
                 </a>
               </li>
               <li class="contact-hero__item">
-                <a class="contact-hero__link" href="https://www.linkedin.com/in/asadbek-makhmudjonov-05a2191bb/"target="_blank">
+                <a class="contact-hero__link" href="https://www.linkedin.com/in/asadbek-makhmudjonov-05a2191bb/" target="_blank">
                   <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M2.4 0h19.2C22.92 0 24 1.08 24 2.4v19.2c0 1.32-1.08 2.4-2.4 2.4H2.4C1.08 24 0 22.92 0 21.6V2.4C0 1.08 1.08 0 2.4 0zm1.2 20.4h3.6V9.6H3.6v10.8zM5.4 7.56c-1.2 0-2.16-.96-2.16-2.16 0-1.2.96-2.16 2.16-2.16 1.2 0 2.16.96 2.16 2.16 0 1.2-.96 2.16-2.16 2.16zM16.8 20.4h3.6v-6.84c0-2.28-1.92-4.2-4.2-4.2-1.08 0-2.4.72-3 1.68V9.6H9.6v10.8h3.6v-6.36c0-.96.84-1.8 1.8-1.8.96 0 1.8.84 1.8 1.8v6.36z" />
@@ -74,6 +73,34 @@
           </div>
         </div>
       </div>
+
+      <section class="contact-me">
+        <h2 class="contact-me__heading">Contact Me</h2>
+        <form class="contact-me__form contact-form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="contact-form__input-box">
+            <label class="contact-form__label">Name
+              <input class="contact-form__input" name="name" type="text" placeholder="Jane Appleseed"
+              minlength="2" required>
+            </label>
+          </div>
+          <div class="contact-form__input-box">
+            <label class="contact-form__label">Email Address
+              <input class="contact-form__input" name="email" type="email" placeholder="email@example.com" required
+              pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$"
+              minlength="2">
+            </label>
+          </div>
+
+          <div class="contact-form__input-box">
+            <label class="contact-form__label">Message
+              <textarea class="contact-form__input contact-form__txt" name="text"
+                placeholder="How can I help?" required minlength="2"></textarea>
+            </label>
+          </div>
+
+          <button class="contact-form__btn"  type="submit">SEND MESSAGE</button>
+        </form>
+      </section>
     </div>
   </main>
 
@@ -114,7 +141,7 @@
           </a>
         </li>
         <li class="sc__item">
-          <a class="sc__link" href="https://www.linkedin.com/in/asadbek-makhmudjonov-05a2191bb/" target="_blank">
+          <a class="sc__link" target="_blank" href="https://www.linkedin.com/" >
             <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M2.4 0h19.2C22.92 0 24 1.08 24 2.4v19.2c0 1.32-1.08 2.4-2.4 2.4H2.4C1.08 24 0 22.92 0 21.6V2.4C0 1.08 1.08 0 2.4 0zm1.2 20.4h3.6V9.6H3.6v10.8zM5.4 7.56c-1.2 0-2.16-.96-2.16-2.16 0-1.2.96-2.16 2.16-2.16 1.2 0 2.16.96 2.16 2.16 0 1.2-.96 2.16-2.16 2.16zM16.8 20.4h3.6v-6.84c0-2.28-1.92-4.2-4.2-4.2-1.08 0-2.4.72-3 1.68V9.6H9.6v10.8h3.6v-6.36c0-.96.84-1.8 1.8-1.8.96 0 1.8.84 1.8 1.8v6.36z" />

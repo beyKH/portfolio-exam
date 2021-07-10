@@ -507,6 +507,90 @@ img {
   opacity: 0.6;
 }
 
+
+/* CONTACT FROM MOBILE */
+
+.contact-me {
+  padding-bottom: 80px;
+}
+
+.contact-me__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-family: var(--secondary-font);
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.5px;
+  color: var(--color-grayish-dark-blue);
+}
+
+.contact-me__form {
+  width: 100%;
+}
+
+.contact-form__input-box {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.contact-form__label {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 30px;
+  color:rgba(51, 50, 61, 0.8);
+
+
+}
+
+.contact-form__input {
+  margin-top: 8px;
+  border: none;
+  font-size: 13px;
+  line-height: 30px;
+  display: block;
+  padding: 9px 16px;
+  width: 100%;
+  background-color: rgba(51, 50, 61, 0.1);
+
+}
+
+.contact-form__input::placeholder{
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 30px;
+  color: rgba(51, 50, 61, 0.4);
+}
+
+.contact-form__txt{
+  min-height: 96px;
+  resize: none;
+}
+
+.contact-form__btn {
+  padding: 17px 24px;
+  border: none;
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+  border: 1px solid var(--color-dark-blue);
+}
+
+.contact-form__btn:hover {
+  background-color: var(--color-light-grey-bg);
+  color: var(--color-dark-blue);
+}
+
+.contact-form__btn:active {
+  background-color: var(--color-dark-blue);
+  color: var(--color-light-grey-bg);
+  opacity: 0.6;
+}
+
+
+
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -605,6 +689,7 @@ only screen and (min-resolution: 2dppx) {
     height: 600px;
     margin-bottom: 0;
     margin-right: 125px;
+    flex-shrink: 0;
 
   }
 
@@ -739,11 +824,12 @@ only screen and (min-resolution: 2dppx) {
     line-height: 30px;
   }
 
-  .contact-hero__list {}
 
-  .contact-hero__item {}
+  /* CONTACT - FORM  */
+  .contact-me{
+    padding-bottom: 96px;
+  }
 
-  .contact-hero__link {}
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
@@ -862,16 +948,35 @@ only screen and (min-resolution: 2dppx) {
     margin-bottom: 0;
   }
 
-  .hero__inner {}
 
-  .contact-hero__info {}
+  /* CONTACT ME DESKTOP */
 
-  .contact-hero__list {}
+  .contact-me {
+    padding-bottom: 110px;
+    display: flex;
 
-  .contact-hero__item {}
+  }
 
-  .contact-hero__link {}
+  .contact-me__heading {
+    width: 350px;
+    flex-shrink: 0;
+    margin-right: 125px;
+    margin-bottom: 0;
+  }
 
+  .contact-me__form {}
+
+  .contact-form {}
+
+  .contact-form__input-box {}
+
+  .contact-form__label {}
+
+  .contact-form__input {}
+
+  .contact-form__txt {}
+
+  .contact-form__btn {}
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
