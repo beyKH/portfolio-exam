@@ -343,6 +343,22 @@ img {
   color: rgba(95, 180, 162, 0.699);
 }
 
+/* MOBILE SELF */
+
+.self {
+  padding-top: 95px;
+}
+
+.self__picture {}
+
+.self__img {}
+
+.self__content {}
+
+.self__heading {}
+
+.self__info {}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
