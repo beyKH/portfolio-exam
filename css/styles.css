@@ -550,6 +550,7 @@ img {
 .contact-form__input {
   margin-top: 8px;
   border: none;
+  border: 1px solid transparent;
   font-size: 13px;
   line-height: 30px;
   display: block;
@@ -564,6 +565,14 @@ img {
   font-size: 13px;
   line-height: 30px;
   color: rgba(51, 50, 61, 0.4);
+}
+
+.contact-form__input:not(:placeholder-shown):not(:focus):invalid{
+  border-color: var(--color-bright-red);
+}
+
+.contact-form__input:not(:placeholder-shown):not(:focus):valid {
+  border-color: var(--color-cyan);
 }
 
 .contact-form__txt{
