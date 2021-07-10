@@ -73,6 +73,34 @@ img {
   overflow: hidden;
 }
 
+/* REUSABEL */
+.btn{
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.btn--simple{
+  padding: 17px 35px;
+  color: var(--color-grayish-dark-blue);
+  border: 1px solid var(--color-grayish-dark-blue);
+}
+
+.btn--simple:hover {
+  background-color: var(--color-grayish-dark-blue);
+  color: var(--color-white);
+}
+
+.btn:active{
+  opacity: 0.6;
+}
+
 
 /* CONTAINER */
 .container {
@@ -351,7 +379,6 @@ img {
 }
 
 .self__img-box{
-
   margin-bottom: 32px;
 }
 
@@ -364,13 +391,23 @@ img {
   display: block;
 }
 
-.self__content {
+.self__content::before,
+.self__content::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: rgb(51, 50, 61, 0.15);
+}
 
+.self__content::before{
+  margin-bottom: 32px;
 }
 
 .self__heading {
   margin: 0;
   margin-bottom: 28px;
+  font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 40px;
   line-height: 42px;
@@ -378,7 +415,16 @@ img {
   color: #33323D;
 }
 
-.self__info {}
+.self__info {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: normal;
+  color: rgb(51, 50, 61, 0.8);
+}
+
+.self__link{
+  margin-bottom: 32px;
+}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
@@ -464,6 +510,63 @@ only screen and (min-resolution: 2dppx) {
     font-size: 40px;
     line-height: 42px;
   }
+
+
+  /* SELF TABLET */
+
+  .self {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .self__img-box {
+    width: 280px;
+    height: 600px;
+    margin-bottom: 0;
+  }
+
+  .self__picture {
+    width: 100%;
+    height: 100%;
+    margin-right: 70px;
+  }
+
+  .self__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .self__content {
+    width: 340px;
+    margin-right: 0;
+  }
+
+  .self__content::before{
+    margin-bottom: 50px;
+  }
+
+  .self__content::after{
+    margin-top: 45px;
+  }
+
+  .self__heading {
+    margin-bottom: 28px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .self__info {
+    margin-bottom: 24px;
+  }
+
+  .self__link {
+    margin-bottom: 0;
+  }
+
+  .btn {}
+
+  .btn--simple {}
 
 
   /* FOOTER TABLET */
