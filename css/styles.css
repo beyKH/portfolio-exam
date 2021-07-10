@@ -83,4 +83,169 @@ img {
   margin-right: auto;
 }
 
-/* SITE-HEADER */
+
+
+/* SITE-HEADER MOBILE */
+.site-header {
+  padding-top: 32px;
+  padding-bottom: 40pxp;
+}
+
+.site-header--open{
+  position: relative;
+  z-index: 1;
+}
+
+.site-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  padding: 0 32px;
+}
+
+.logo {
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+
+.logo:hover{
+  opacity: 0.8;
+}
+
+.logo:active{
+  opacity: 0.6;
+}
+
+.logo__img{
+  display: block;
+}
+
+
+.site-header__toggler {
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/navbar-burger.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 25px;
+  height: 13px;
+}
+
+.site-header--open .site-header__toggler{
+  background-image: url("../img/nav-cancel.svg");
+}
+
+.site-header__sitenav{
+  display: none;
+
+}
+
+.site-header--open .site-header__sitenav {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: calc(100% + 24px);
+  right: 32px;
+  padding: 40px 65px;
+  background-color: var(--color-grayish-dark-blue);
+}
+
+.sitenav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.sitenav__link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+
+/* =================         TABLET             ========================= */
+
+
+@media only screen  and (min-width: 768px){
+
+  /* SITE-HEADER TABLET */
+
+
+  .site-header {
+    padding-top: 64px;
+    padding-bottom: 47px;
+
+  }
+
+  .site-header__container {}
+
+  .container {
+    padding: 0 40px;
+  }
+
+  .site-header__toggler {
+    display: none;
+  }
+
+  .site-header__sitenav {
+    display: block;
+    padding: 0;
+  }
+
+  .sitenav {}
+
+  .sitenav__list {
+    display: flex;
+  }
+
+  .sitenav__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 42px;
+  }
+
+  .sitenav__link {
+    color: var(--color-grayish-dark-blue);
+
+  }
+
+  .sitenav__link--active {}
+
+
+}
+
+
+/* =================        DESKTOP             ========================= */
+
+@media only screen  and (min-width: 1200px){
+
+  /* SITE-HEADER DESKTOP */
+
+  .site-header{
+    padding-top: 64px;
+    padding-bottom: 54px;
+  }
+
+  .container{
+    padding: 0 20px;
+  }
+
+  .sitenav__link--active{
+    color: var(--color-cyan);
+  }
+
+}
