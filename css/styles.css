@@ -1,4 +1,6 @@
 :root {
+  --main-font: "Arial", sans-serif;
+  --color-white :  #fff;
 }
 
 /* GENERAL */
@@ -20,8 +22,8 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  background-color: #fff;
+  font-family: var(--main-font);
+  background-color: var(--color-white);
 }
 
 img {
