@@ -83,6 +83,11 @@ img {
   margin-right: auto;
 }
 
+/* SITE-CONTENT */
+.site-content{
+  flex-grow: 1;
+}
+
 
 
 /* SITE-HEADER MOBILE */
@@ -109,6 +114,7 @@ img {
 .logo {
   transition: opacity 0.3s ease;
   text-decoration: none;
+  display: inline-block;
 }
 
 
@@ -178,6 +184,65 @@ img {
 }
 
 
+.footer{
+  padding: 55px 100px;
+  background-color: var(--color-grayish-dark-blue);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  margin-bottom: 40px;
+}
+
+.footer__list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.footer__link {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.sc__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.sc__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.sc__link {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.sc__link svg{
+  display: block;
+}
+
+
 /* =================         TABLET             ========================= */
 
 
@@ -192,8 +257,6 @@ img {
 
   }
 
-  .site-header__container {}
-
   .container {
     padding: 0 40px;
   }
@@ -206,8 +269,6 @@ img {
     display: block;
     padding: 0;
   }
-
-  .sitenav {}
 
   .sitenav__list {
     display: flex;
@@ -223,8 +284,33 @@ img {
 
   }
 
-  .sitenav__link--active {}
 
+  /* FOOTER TABLET */
+  .footer{
+    padding: 24px 0;
+  }
+
+  .footer__container{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer__logo{
+    margin-bottom: 0;
+    margin-right: 48px;
+
+  }
+
+  .footer__list{
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+  }
+
+  .footer__item:not(:last-child){
+    margin-bottom: 0;
+    margin-right: 42px;
+  }
 
 }
 
@@ -244,8 +330,20 @@ img {
     padding: 0 20px;
   }
 
+  .sitenav__link{
+    transition: color 0.3s ease, opacity 0.3s ease;
+  }
+
   .sitenav__link--active{
     color: var(--color-cyan);
+
+  }
+  .sitenav__link:hover{
+    color: rgba(95, 180, 162, 0.7);
+  }
+
+  .sitenav__link:active{
+    opacity: 0.5;
   }
 
 }
