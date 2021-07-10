@@ -347,15 +347,36 @@ img {
 
 .self {
   padding-top: 95px;
+  padding-bottom: 115px;
 }
 
-.self__picture {}
+.self__img-box{
 
-.self__img {}
+  margin-bottom: 32px;
+}
 
-.self__content {}
+.self__picture {
+  width: 100%;
+  }
 
-.self__heading {}
+.self__img {
+  width: 100%;
+  display: block;
+}
+
+.self__content {
+
+}
+
+.self__heading {
+  margin: 0;
+  margin-bottom: 28px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.5px;
+  color: #33323D;
+}
 
 .self__info {}
 
