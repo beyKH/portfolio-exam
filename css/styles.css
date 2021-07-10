@@ -442,6 +442,70 @@ img {
   color: #33323D;
 }
 
+/* ======================= CONTACT PAGE ======================= */
+.contact-hero{
+  padding-bottom: 32px;
+}
+.contact-hero::before , .contact-hero::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: rgba(51, 50, 61, 0.15);
+  display: block;
+}
+
+.contact-hero::before{
+  margin-bottom: 24px;
+}
+
+.contact-hero::after{
+  margin-top: 24px;
+}
+
+.contact-hero__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.5px;
+}
+
+.contact-hero__info {
+  margin: 0;
+  margin-bottom: 14px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: rgba(51, 50, 61, 0.8);
+
+}
+
+.contact-hero__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.contact-hero__item:not(:last-child){
+  margin-right: 15px;
+}
+
+.contact-hero__link {
+  color: var(--color-grayish-dark-blue);
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.contact-hero__link:hover{
+  color: rgba(51, 50, 61, 0.808);
+}
+
+.contact-hero__link:active{
+  opacity: 0.6;
+}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
@@ -646,6 +710,40 @@ only screen and (min-resolution: 2dppx) {
     margin-bottom: 0;
     margin-right: 42px;
   }
+
+
+  /* ================ CONTACT PAGE ABLET ============== */
+
+  .contact-hero{
+    padding-top: 50px;
+    padding-bottom: 32px;
+  }
+
+  .contact-hero::before {
+    margin-bottom: 32px;
+  }
+
+  .contact-hero::after{
+    margin-top: 32px;
+  }
+
+  .contact-hero__heading {
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .contact-hero__info {
+    margin-bottom: 24px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .contact-hero__list {}
+
+  .contact-hero__item {}
+
+  .contact-hero__link {}
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
