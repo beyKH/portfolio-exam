@@ -515,14 +515,16 @@ only screen and (min-resolution: 2dppx) {
   /* SELF TABLET */
 
   .self {
+    padding: 96px 0;
     display: flex;
-    justify-content: space-between;
   }
 
   .self__img-box {
     width: 280px;
     height: 600px;
     margin-bottom: 0;
+    margin-right: 125px;
+
   }
 
   .self__picture {
@@ -539,6 +541,7 @@ only screen and (min-resolution: 2dppx) {
   .self__content {
     width: 340px;
     margin-right: 0;
+
   }
 
   .self__content::before{
@@ -657,6 +660,36 @@ only screen and (min-resolution: 2dppx) {
   .hero__heading {
     margin-bottom: 50px;
   }
+
+
+  /* SELF DESKTOP */
+
+  .self {
+    padding: 150px 0;
+  }
+
+  .self__img-box {
+    width: 540px;
+    height: 600px;
+  }
+
+  .self__picture {}
+
+  .self__img {}
+
+  .self__content {
+    width: 350px;
+  }
+
+  .self__heading {}
+
+  .self__info {}
+
+  .self__link {}
+
+  .btn {}
+
+  .btn--simple {}
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
