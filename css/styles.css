@@ -842,11 +842,35 @@ only screen and (min-resolution: 2dppx) {
     margin-left: 30px;
   }
 
-  .follow__link {}
 
-  .btn {}
+  /* CONTACT DESKTOP PAGE */
+  .contact-hero::before {
+    margin-bottom: 48px;
+  }
 
-  .btn--simple {}
+  .contact-hero::after{
+    margin-top: 48px;
+  }
+
+  .contact-hero__content {
+    display: flex;
+  }
+  .contact-hero__heading {
+    width: 350px;
+    flex-shrink: 0;
+    margin-right: 125px;
+    margin-bottom: 0;
+  }
+
+  .hero__inner {}
+
+  .contact-hero__info {}
+
+  .contact-hero__list {}
+
+  .contact-hero__item {}
+
+  .contact-hero__link {}
 
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
