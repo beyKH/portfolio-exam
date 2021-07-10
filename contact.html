@@ -85,6 +85,7 @@
             <label class="contact-form__label">Name
               <input class="contact-form__input" name="name" type="text" placeholder="Jane Appleseed"
               minlength="2" required>
+              <span class="contact-form__input-span">This field is required</span>
             </label>
           </div>
           <div class="contact-form__input-box">
@@ -92,6 +93,7 @@
               <input class="contact-form__input" name="email" type="email" placeholder="email@example.com" required
               pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$"
               minlength="2">
+              <span class="contact-form__input-span">This field is required</span>
             </label>
           </div>
 
@@ -99,7 +101,8 @@
             <label class="contact-form__label">Message
               <textarea class="contact-form__input contact-form__txt" name="text"
                 placeholder="How can I help?" required minlength="2"></textarea>
-            </label>
+                <span class="contact-form__input-span">This field is required</span>
+              </label>
           </div>
 
           <button class="contact-form__btn"  type="submit">SEND MESSAGE</button>

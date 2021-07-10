@@ -575,6 +575,26 @@ img {
   border-color: var(--color-cyan);
 }
 
+
+.contact-form__input{
+  position: relative;
+}
+.contact-form__input-span{
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.contact-form__input:not(:placeholder-shown):not(:focus):invalid ~ .contact-form__input-span {
+  margin-top: 4px;
+  font-style: italic;
+  display: block;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  color: #F43030;
+}
+
 .contact-form__txt{
   min-height: 96px;
   resize: none;
