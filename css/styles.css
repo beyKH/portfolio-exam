@@ -14,7 +14,7 @@
 @font-face {
   font-family: "Ibarra Real Nova";
   src: url("../fonts/IbarraRealNova-Bold.woff2") format("woff2"),
-    url("../fonts/IbarraRealNova-Bold.woff") format("woff");
+  url("../fonts/IbarraRealNova-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -23,7 +23,7 @@
 @font-face {
   font-family: "Public Sans";
   src: url("../fonts/PublicSans-Regular.woff2") format("woff2"),
-    url("../fonts/PublicSans-Regular.woff") format("woff");
+  url("../fonts/PublicSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -384,7 +384,7 @@ img {
 
 .self__picture {
   width: 100%;
-  }
+}
 
 .self__img {
   width: 100%;
@@ -449,19 +449,19 @@ img {
 .contact-hero{
   padding-bottom: 32px;
 }
-.contact-hero::before , .contact-hero::after {
-  content: '';
+
+.contact-hr{
+  border: none;
   height: 1px;
   width: 100%;
   background-color: rgba(51, 50, 61, 0.15);
   display: block;
 }
 
-.contact-hero::before{
+.contact-hero__top{
   margin-bottom: 24px;
 }
-
-.contact-hero::after{
+.contact-hero__bottom{
   margin-top: 24px;
 }
 
@@ -802,18 +802,19 @@ only screen and (min-resolution: 2dppx) {
 
   /* ================ CONTACT PAGE ABLET ============== */
 
+  .contact-hero__top {
+    margin-bottom: 32px;
+  }
+
+  .contact-hero__bottom {
+    margin-top: 32px;
+  }
+
   .contact-hero{
     padding-top: 50px;
     padding-bottom: 32px;
   }
 
-  .contact-hero::before {
-    margin-bottom: 32px;
-  }
-
-  .contact-hero::after{
-    margin-top: 32px;
-  }
 
   .contact-hero__heading {
     margin-bottom: 24px;
@@ -933,11 +934,11 @@ only screen and (min-resolution: 2dppx) {
 
 
   /* CONTACT DESKTOP PAGE */
-  .contact-hero::before {
+  .contact-hero__top {
     margin-bottom: 48px;
   }
 
-  .contact-hero::after{
+  .contact-hero__bottom {
     margin-top: 48px;
   }
 
