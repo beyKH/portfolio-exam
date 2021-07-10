@@ -426,6 +426,23 @@ img {
   margin-bottom: 32px;
 }
 
+
+.follow {
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.follow__heading {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: var(--secondary-font);
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.5px;
+  color: #33323D;
+}
+
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -567,9 +584,40 @@ only screen and (min-resolution: 2dppx) {
     margin-bottom: 0;
   }
 
-  .btn {}
+  /* FOLLOW TABLET */
+  .follow {
+    padding-bottom: 96px;
+    display: flex;
+    align-items: center;
 
-  .btn--simple {}
+  }
+
+  .follow__heading {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.5px;
+  }
+
+  .follow__heading::after {
+    margin-left: 30px;
+    flex-shrink: 0;
+    content: '';
+    width: 113px;
+    height: 1px;
+    background-color: rgba(51, 50, 61, 0.15);
+    display: block;
+  }
+
+  .follow__link {
+    white-space: nowrap;
+  }
+
 
 
   /* FOOTER TABLET */
@@ -681,15 +729,27 @@ only screen and (min-resolution: 2dppx) {
     width: 350px;
   }
 
-  .self__heading {}
+  /* FOLLOW DESKTOP */
 
-  .self__info {}
+  .follow {
+    padding-bottom: 150px;
+  }
 
-  .self__link {}
+  .follow__heading{
+    width: 910px;
+  }
+
+  .follow__heading::after {
+    width: 530px;
+    margin-left: 30px;
+  }
+
+  .follow__link {}
 
   .btn {}
 
   .btn--simple {}
+
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
