@@ -29,9 +29,8 @@
   font-display: swap;
 }
 
-
-
 /* GENERAL */
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -74,6 +73,7 @@ img {
 }
 
 /* REUSABEL */
+
 .btn{
   display: inline-block;
   border: none;
@@ -101,8 +101,8 @@ img {
   opacity: 0.6;
 }
 
-
 /* CONTAINER */
+
 .container {
   max-width: 1150px;
   padding-left: 20px;
@@ -112,13 +112,13 @@ img {
 }
 
 /* SITE-CONTENT */
+
 .site-content{
   flex-grow: 1;
 }
 
-
-
 /* SITE-HEADER MOBILE */
+
 .site-header {
   padding-top: 32px;
   padding-bottom: 40px;
@@ -158,7 +158,6 @@ img {
   display: block;
 }
 
-
 .site-header__toggler {
   border: none;
   background-color: transparent;
@@ -184,8 +183,9 @@ img {
   z-index: 1;
   top: calc(100% - 16px);
   right: 32px;
-  padding: 40px 65px;
+  width: 220px;
   background-color: var(--color-grayish-dark-blue);
+  text-overflow: ellipsis;
 }
 
 .sitenav__list {
@@ -193,6 +193,8 @@ img {
   padding: 0;
   list-style: none;
   text-align: center;
+  padding: 40px 45px;
+
 }
 
 .sitenav__item:not(:last-child) {
@@ -209,13 +211,11 @@ img {
   text-transform: uppercase;
   color: var(--color-white);
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
-
 
 /* HERO MOBILE */
-.hero {
-}
 
 .hero__img-box {
   margin-bottom: 24px;
@@ -228,10 +228,6 @@ img {
   background-position: center center;
   background-size: cover;
   height: 271px;
-
-}
-
-.hero__content {
 }
 
 .hero__heading {
@@ -340,7 +336,6 @@ img {
   opacity: 0.6;
 }
 
-
 .sc__list {
   margin: 0;
   padding: 0;
@@ -426,7 +421,6 @@ img {
   margin-bottom: 32px;
 }
 
-
 .follow {
   padding-bottom: 80px;
   text-align: center;
@@ -446,6 +440,7 @@ img {
 }
 
 /* ======================= CONTACT PAGE ======================= */
+
 .contact-hero{
   padding-bottom: 32px;
 }
@@ -461,6 +456,7 @@ img {
 .contact-hero__top{
   margin-bottom: 24px;
 }
+
 .contact-hero__bottom{
   margin-top: 24px;
 }
@@ -482,7 +478,6 @@ img {
   font-size: 15px;
   line-height: 30px;
   color: rgba(51, 50, 61, 0.8);
-
 }
 
 .contact-hero__list {
@@ -509,7 +504,6 @@ img {
 .contact-hero__link:active{
   opacity: 0.6;
 }
-
 
 /* CONTACT FROM MOBILE */
 
@@ -543,8 +537,6 @@ img {
   font-size: 13px;
   line-height: 30px;
   color:rgba(51, 50, 61, 0.8);
-
-
 }
 
 .contact-form__input {
@@ -557,7 +549,6 @@ img {
   padding: 9px 16px;
   width: 100%;
   background-color: rgba(51, 50, 61, 0.1);
-
 }
 
 .contact-form__input::placeholder{
@@ -574,7 +565,6 @@ img {
 .contact-form__input:not(:placeholder-shown):not(:focus):valid {
   border-color: var(--color-cyan);
 }
-
 
 .contact-form__input{
   position: relative;
@@ -622,7 +612,6 @@ img {
 
 
 
-
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -641,11 +630,9 @@ only screen and (min-resolution: 2dppx) {
 
   /* SITE-HEADER TABLET */
 
-
   .site-header {
     padding-top: 64px;
     padding-bottom: 47px;
-
   }
 
   .container {
@@ -656,13 +643,20 @@ only screen and (min-resolution: 2dppx) {
     display: none;
   }
 
-  .site-header__sitenav {
+  .site-header--open .site-header__sitenav{
+    display: none;
+  }
+
+  .site-header .site-header__sitenav {
     display: block;
+    position: static;
+    background-color: transparent;
     padding: 0;
   }
 
   .sitenav__list {
     display: flex;
+    padding: 0;
   }
 
   .sitenav__item:not(:last-child) {
@@ -672,7 +666,6 @@ only screen and (min-resolution: 2dppx) {
 
   .sitenav__link {
     color: var(--color-grayish-dark-blue);
-
   }
 
   /* HERO TABLET */
@@ -701,13 +694,11 @@ only screen and (min-resolution: 2dppx) {
   }
 
   .hero__heading {
-
     margin-bottom: 48px;
     font-weight: bold;
     font-size: 40px;
     line-height: 42px;
   }
-
 
   /* SELF TABLET */
 
@@ -722,7 +713,6 @@ only screen and (min-resolution: 2dppx) {
     margin-bottom: 0;
     margin-right: 125px;
     flex-shrink: 0;
-
   }
 
   .self__picture {
@@ -739,7 +729,6 @@ only screen and (min-resolution: 2dppx) {
   .self__content {
     width: 340px;
     margin-right: 0;
-
   }
 
   .self__content::before{
@@ -766,6 +755,7 @@ only screen and (min-resolution: 2dppx) {
   }
 
   /* FOLLOW TABLET */
+
   .follow {
     padding-bottom: 96px;
     display: flex;
@@ -773,35 +763,35 @@ only screen and (min-resolution: 2dppx) {
 
   }
 
-  .follow__heading {
-    width: 500px;
+  .follow__inner{
+    width: 100%;
     display: flex;
     align-items: center;
-    margin: 0;
-    margin-right: auto;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 42px;
-    letter-spacing: -0.5px;
   }
 
-  .follow__heading::after {
-    margin-left: 30px;
-    flex-shrink: 0;
-    content: '';
-    width: 113px;
-    height: 1px;
-    background-color: rgba(51, 50, 61, 0.15);
+  .follow__inner::after {
     display: block;
+    content: '';
+    width: 100%;
+    height: 1px ;
+    background-color: rgba(51, 50, 61, 0.15);
+    flex-flow: 1;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .follow__heading {
+    margin: 0;
+    width: 350px;
+    flex-shrink: 0;
   }
 
   .follow__link {
     white-space: nowrap;
   }
 
-
-
   /* FOOTER TABLET */
+
   .footer{
     padding: 24px 0;
   }
@@ -814,7 +804,6 @@ only screen and (min-resolution: 2dppx) {
   .footer__logo{
     margin-bottom: 0;
     margin-right: 48px;
-
   }
 
   .footer__list{
@@ -827,7 +816,6 @@ only screen and (min-resolution: 2dppx) {
     margin-bottom: 0;
     margin-right: 42px;
   }
-
 
   /* ================ CONTACT PAGE ABLET ============== */
 
@@ -844,7 +832,6 @@ only screen and (min-resolution: 2dppx) {
     padding-bottom: 32px;
   }
 
-
   .contact-hero__heading {
     margin-bottom: 24px;
     font-size: 40px;
@@ -856,7 +843,6 @@ only screen and (min-resolution: 2dppx) {
     font-size: 15px;
     line-height: 30px;
   }
-
 
   /* CONTACT - FORM  */
   .contact-me{
@@ -874,7 +860,6 @@ only screen and (min-resolution: 2dppx) {
       background-image: url('../img/hero@2x.jpg');
     }
   }
-
 }
 
 /* =================        DESKTOP             ========================= */
@@ -925,7 +910,6 @@ only screen and (min-resolution: 2dppx) {
     margin-bottom: 50px;
   }
 
-
   /* SELF DESKTOP */
 
   .self {
@@ -937,10 +921,6 @@ only screen and (min-resolution: 2dppx) {
     height: 600px;
   }
 
-  .self__picture {}
-
-  .self__img {}
-
   .self__content {
     width: 350px;
   }
@@ -951,17 +931,35 @@ only screen and (min-resolution: 2dppx) {
     padding-bottom: 150px;
   }
 
-  .follow__heading{
-    width: 910px;
+  .follow__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
 
-  .follow__heading::after {
-    width: 530px;
+  .follow__inner::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgba(51, 50, 61, 0.15);
+    flex-flow: 1;
     margin-left: 30px;
+    margin-right: 30px;
   }
 
+  .follow__heading {
+    margin: 0;
+    width: 350px;
+    flex-shrink: 0;
+  }
+
+  .follow__link {
+    white-space: nowrap;
+  }
 
   /* CONTACT DESKTOP PAGE */
+
   .contact-hero__top {
     margin-bottom: 48px;
   }
@@ -980,7 +978,6 @@ only screen and (min-resolution: 2dppx) {
     margin-bottom: 0;
   }
 
-
   /* CONTACT ME DESKTOP */
 
   .contact-me {
@@ -996,19 +993,6 @@ only screen and (min-resolution: 2dppx) {
     margin-bottom: 0;
   }
 
-  .contact-me__form {}
-
-  .contact-form {}
-
-  .contact-form__input-box {}
-
-  .contact-form__label {}
-
-  .contact-form__input {}
-
-  .contact-form__txt {}
-
-  .contact-form__btn {}
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
@@ -1020,5 +1004,4 @@ only screen and (min-resolution: 2dppx) {
       background-image: url('../img/hero@2x.jpg');
     }
   }
-
 }
